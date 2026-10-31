@@ -38,6 +38,16 @@ dsh web
 }
 ```
 
+## DSH 插件市场索引
+
+在 DSH Web UI 中启用 **Custom plugin markets**，然后在 **Discover** 添加：
+
+```text
+https://techotaku39.github.io/dsh-usage-plugin/index.json
+```
+
+索引文件在 [`docs/index.json`](docs/index.json)。
+
 ## 插件入口
 
 - `sidebar.panellist`：侧边栏「用量」入口
