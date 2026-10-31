@@ -1,0 +1,35 @@
+{
+  "format": 1,
+  "title": {
+    "en": "Techotaku39 DSH Plugins",
+    "zh": "Techotaku39 DSH 插件"
+  },
+  "plugins": [
+    {
+      "name": "@techotaku39/dsh-usage-plugin",
+      "title": {
+        "en": "DSH Usage",
+        "zh": "DSH 用量"
+      },
+      "description": "Monthly DSH token usage and OpenCode Go allowance panel for the DSH web UI.",
+      "icon": "icons/dsh-usage.svg",
+      "author": "techotaku39",
+      "homepage": "https://github.com/techotaku39/dsh-usage-plugin#readme",
+      "repository": {
+        "url": "https://github.com/techotaku39/dsh-usage-plugin"
+      },
+      "versions": [
+        {
+          "version": "0.1.0",
+          "publishTimestamp": 1793479024,
+          "source": {
+            "type": "npm"
+          },
+          "engines": {
+            "dsh": ">=0.2.1-rc.5 <0.3.0"
+          }
+        }
+      ]
+    }
+  ]
+}

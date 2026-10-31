@@ -1,0 +1,59 @@
+{
+  "name": "@techotaku39/dsh-usage-plugin",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Monthly DSH token usage and OpenCode Go allowance panel for the DSH web UI.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json"
+  },
+  "files": [
+    "README.md",
+    "TESTING.md",
+    "LICENSE",
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "lib/*.js",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-layout"
+      ]
+    }
+  },
+  "author": "techotaku39",
+  "license": "MIT",
+  "homepage": "https://github.com/techotaku39/dsh-usage-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techotaku39/dsh-usage-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/techotaku39/dsh-usage-plugin/issues"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "opencode-go",
+    "usage",
+    "tokens",
+    "plugin"
+  ],
+  "engines": {
+    "dsh": ">=0.2.1-rc.5 <0.3.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
